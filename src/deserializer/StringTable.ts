@@ -1,4 +1,4 @@
-import { i8 } from '../types/bytecode';
+import { i8 } from '../types/bytedata';
 
 export default class StringTable extends Array {
 	strings: string[] = [];

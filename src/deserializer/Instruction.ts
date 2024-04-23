@@ -1,5 +1,5 @@
 import { OpProperties, Opcodes, getOpProperties } from '../enums/opcodes';
-import { i32, i8 } from '../types/bytecode';
+import { i32, i8 } from '../types/bytedata';
 
 export default class Instruction {
 	opcode: i32 = 0;

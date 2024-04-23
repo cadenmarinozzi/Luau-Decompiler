@@ -1,5 +1,5 @@
 import ByteReader from '../byteReader';
-import { i8, uint32 } from '../types/bytecode';
+import { i8, uint32 } from '../types/bytedata';
 import Function from './Function';
 import StringTable from './StringTable';
 

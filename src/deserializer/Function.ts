@@ -1,5 +1,5 @@
 import ByteReader from '../byteReader';
-import { i8, uint32 } from '../types/bytecode';
+import { i8, uint32 } from '../types/bytedata';
 import Constant from './Constant';
 import Instruction from './Instruction';
 import { ConstantType } from '../enums/constants';
