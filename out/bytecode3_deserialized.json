@@ -1,0 +1,549 @@
+{
+    "nStrings": 5,
+    "stringTable": [],
+    "nFunctions": 2,
+    "functions": [
+        {
+            "nParams": 2,
+            "isVararg": false,
+            "maxStackSize": 3,
+            "nUpvalues": 0,
+            "flags": 0,
+            "nTypeInfo": 0,
+            "typeinfo": "",
+            "nInstructions": 2,
+            "instructions": [
+                {
+                    "opcode": 33,
+                    "name": "LOP_ADD",
+                    "a": 2,
+                    "b": 0,
+                    "c": 1,
+                    "d": 256,
+                    "e": 65538,
+                    "properties": {
+                        "mode": "abc",
+                        "hasAux": false
+                    }
+                },
+                {
+                    "opcode": 22,
+                    "name": "LOP_RETURN",
+                    "a": 2,
+                    "b": 2,
+                    "c": 0,
+                    "d": 2,
+                    "e": 514,
+                    "properties": {
+                        "mode": "abc",
+                        "hasAux": false
+                    }
+                }
+            ],
+            "nConstants": 0,
+            "constants": [],
+            "nFunctions": 0,
+            "functions": [],
+            "lineDefined": 1,
+            "debugName": 1
+        },
+        {
+            "nParams": 0,
+            "isVararg": true,
+            "maxStackSize": 3,
+            "nUpvalues": 0,
+            "flags": 2,
+            "nTypeInfo": 0,
+            "typeinfo": "",
+            "nInstructions": 34,
+            "instructions": [
+                {
+                    "opcode": 65,
+                    "name": "LOP_PREPVARARGS",
+                    "a": 0,
+                    "b": 0,
+                    "c": 0,
+                    "d": 0,
+                    "e": 0,
+                    "properties": {
+                        "mode": "abc",
+                        "hasAux": false
+                    }
+                },
+                {
+                    "opcode": 64,
+                    "name": "LOP_DUPCLOSURE",
+                    "a": 0,
+                    "b": 0,
+                    "c": 0,
+                    "d": 0,
+                    "e": 0,
+                    "properties": {
+                        "mode": "ad",
+                        "hasAux": false
+                    }
+                },
+                {
+                    "opcode": 8,
+                    "name": "LOP_SETGLOBAL",
+                    "a": 0,
+                    "b": 0,
+                    "c": 191,
+                    "d": -16640,
+                    "e": -4259840,
+                    "properties": {
+                        "mode": "abc",
+                        "hasAux": true
+                    }
+                },
+                {
+                    "opcode": 1,
+                    "name": "LOP_BREAK",
+                    "a": 0,
+                    "b": 0,
+                    "c": 0,
+                    "d": 0,
+                    "e": 0,
+                    "properties": {
+                        "mode": "none",
+                        "hasAux": false
+                    }
+                },
+                {
+                    "opcode": 7,
+                    "name": "LOP_GETGLOBAL",
+                    "a": 0,
+                    "b": 0,
+                    "c": 191,
+                    "d": -16640,
+                    "e": -4259840,
+                    "properties": {
+                        "mode": "abc",
+                        "hasAux": true
+                    }
+                },
+                {
+                    "opcode": 1,
+                    "name": "LOP_BREAK",
+                    "a": 0,
+                    "b": 0,
+                    "c": 0,
+                    "d": 0,
+                    "e": 0,
+                    "properties": {
+                        "mode": "none",
+                        "hasAux": false
+                    }
+                },
+                {
+                    "opcode": 4,
+                    "name": "LOP_LOADN",
+                    "a": 1,
+                    "b": 1,
+                    "c": 0,
+                    "d": 1,
+                    "e": 257,
+                    "properties": {
+                        "mode": "ad",
+                        "hasAux": false
+                    }
+                },
+                {
+                    "opcode": 4,
+                    "name": "LOP_LOADN",
+                    "a": 2,
+                    "b": 2,
+                    "c": 0,
+                    "d": 2,
+                    "e": 514,
+                    "properties": {
+                        "mode": "ad",
+                        "hasAux": false
+                    }
+                },
+                {
+                    "opcode": 21,
+                    "name": "LOP_CALL",
+                    "a": 0,
+                    "b": 3,
+                    "c": 2,
+                    "d": 515,
+                    "e": 131840,
+                    "properties": {
+                        "mode": "abc",
+                        "hasAux": false
+                    }
+                },
+                {
+                    "opcode": 79,
+                    "name": "LOP_JUMPXEQKN",
+                    "a": 0,
+                    "b": 19,
+                    "c": 0,
+                    "d": 19,
+                    "e": 4864,
+                    "properties": {
+                        "mode": "ad",
+                        "hasAux": true
+                    }
+                },
+                {
+                    "opcode": 2,
+                    "name": "LOP_LOADNIL",
+                    "a": 0,
+                    "b": 0,
+                    "c": 0,
+                    "d": 0,
+                    "e": 0,
+                    "properties": {
+                        "mode": "abc",
+                        "hasAux": false
+                    }
+                },
+                {
+                    "opcode": 7,
+                    "name": "LOP_GETGLOBAL",
+                    "a": 0,
+                    "b": 0,
+                    "c": 191,
+                    "d": -16640,
+                    "e": -4259840,
+                    "properties": {
+                        "mode": "abc",
+                        "hasAux": true
+                    }
+                },
+                {
+                    "opcode": 1,
+                    "name": "LOP_BREAK",
+                    "a": 0,
+                    "b": 0,
+                    "c": 0,
+                    "d": 0,
+                    "e": 0,
+                    "properties": {
+                        "mode": "none",
+                        "hasAux": false
+                    }
+                },
+                {
+                    "opcode": 4,
+                    "name": "LOP_LOADN",
+                    "a": 1,
+                    "b": 1,
+                    "c": 0,
+                    "d": 1,
+                    "e": 257,
+                    "properties": {
+                        "mode": "ad",
+                        "hasAux": false
+                    }
+                },
+                {
+                    "opcode": 4,
+                    "name": "LOP_LOADN",
+                    "a": 2,
+                    "b": 10,
+                    "c": 0,
+                    "d": 10,
+                    "e": 2562,
+                    "properties": {
+                        "mode": "ad",
+                        "hasAux": false
+                    }
+                },
+                {
+                    "opcode": 21,
+                    "name": "LOP_CALL",
+                    "a": 0,
+                    "b": 3,
+                    "c": 2,
+                    "d": 515,
+                    "e": 131840,
+                    "properties": {
+                        "mode": "abc",
+                        "hasAux": false
+                    }
+                },
+                {
+                    "opcode": 4,
+                    "name": "LOP_LOADN",
+                    "a": 1,
+                    "b": 11,
+                    "c": 0,
+                    "d": 11,
+                    "e": 2817,
+                    "properties": {
+                        "mode": "ad",
+                        "hasAux": false
+                    }
+                },
+                {
+                    "opcode": 31,
+                    "name": "LOP_JUMPIFNOTLE",
+                    "a": 1,
+                    "b": 6,
+                    "c": 0,
+                    "d": 6,
+                    "e": 1537,
+                    "properties": {
+                        "mode": "ad",
+                        "hasAux": true
+                    }
+                },
+                {
+                    "opcode": 0,
+                    "name": "LOP_NOP",
+                    "a": 0,
+                    "b": 0,
+                    "c": 0,
+                    "d": 0,
+                    "e": 0,
+                    "properties": {
+                        "mode": "none",
+                        "hasAux": false
+                    }
+                },
+                {
+                    "opcode": 12,
+                    "name": "LOP_GETIMPORT",
+                    "a": 0,
+                    "b": 4,
+                    "c": 0,
+                    "d": 4,
+                    "e": 1024,
+                    "properties": {
+                        "mode": "ad",
+                        "hasAux": true
+                    }
+                },
+                {
+                    "opcode": 0,
+                    "name": "LOP_NOP",
+                    "a": 0,
+                    "b": 48,
+                    "c": 64,
+                    "d": 16432,
+                    "e": 4206592,
+                    "properties": {
+                        "mode": "none",
+                        "hasAux": false
+                    }
+                },
+                {
+                    "opcode": 5,
+                    "name": "LOP_LOADK",
+                    "a": 1,
+                    "b": 5,
+                    "c": 0,
+                    "d": 5,
+                    "e": 1281,
+                    "properties": {
+                        "mode": "ad",
+                        "hasAux": false
+                    }
+                },
+                {
+                    "opcode": 21,
+                    "name": "LOP_CALL",
+                    "a": 0,
+                    "b": 2,
+                    "c": 1,
+                    "d": 258,
+                    "e": 66048,
+                    "properties": {
+                        "mode": "abc",
+                        "hasAux": false
+                    }
+                },
+                {
+                    "opcode": 22,
+                    "name": "LOP_RETURN",
+                    "a": 0,
+                    "b": 1,
+                    "c": 0,
+                    "d": 1,
+                    "e": 256,
+                    "properties": {
+                        "mode": "abc",
+                        "hasAux": false
+                    }
+                },
+                {
+                    "opcode": 12,
+                    "name": "LOP_GETIMPORT",
+                    "a": 0,
+                    "b": 4,
+                    "c": 0,
+                    "d": 4,
+                    "e": 1024,
+                    "properties": {
+                        "mode": "ad",
+                        "hasAux": true
+                    }
+                },
+                {
+                    "opcode": 0,
+                    "name": "LOP_NOP",
+                    "a": 0,
+                    "b": 48,
+                    "c": 64,
+                    "d": 16432,
+                    "e": 4206592,
+                    "properties": {
+                        "mode": "none",
+                        "hasAux": false
+                    }
+                },
+                {
+                    "opcode": 5,
+                    "name": "LOP_LOADK",
+                    "a": 1,
+                    "b": 6,
+                    "c": 0,
+                    "d": 6,
+                    "e": 1537,
+                    "properties": {
+                        "mode": "ad",
+                        "hasAux": false
+                    }
+                },
+                {
+                    "opcode": 21,
+                    "name": "LOP_CALL",
+                    "a": 0,
+                    "b": 2,
+                    "c": 1,
+                    "d": 258,
+                    "e": 66048,
+                    "properties": {
+                        "mode": "abc",
+                        "hasAux": false
+                    }
+                },
+                {
+                    "opcode": 22,
+                    "name": "LOP_RETURN",
+                    "a": 0,
+                    "b": 1,
+                    "c": 0,
+                    "d": 1,
+                    "e": 256,
+                    "properties": {
+                        "mode": "abc",
+                        "hasAux": false
+                    }
+                },
+                {
+                    "opcode": 12,
+                    "name": "LOP_GETIMPORT",
+                    "a": 0,
+                    "b": 4,
+                    "c": 0,
+                    "d": 4,
+                    "e": 1024,
+                    "properties": {
+                        "mode": "ad",
+                        "hasAux": true
+                    }
+                },
+                {
+                    "opcode": 0,
+                    "name": "LOP_NOP",
+                    "a": 0,
+                    "b": 48,
+                    "c": 64,
+                    "d": 16432,
+                    "e": 4206592,
+                    "properties": {
+                        "mode": "none",
+                        "hasAux": false
+                    }
+                },
+                {
+                    "opcode": 5,
+                    "name": "LOP_LOADK",
+                    "a": 1,
+                    "b": 7,
+                    "c": 0,
+                    "d": 7,
+                    "e": 1793,
+                    "properties": {
+                        "mode": "ad",
+                        "hasAux": false
+                    }
+                },
+                {
+                    "opcode": 21,
+                    "name": "LOP_CALL",
+                    "a": 0,
+                    "b": 2,
+                    "c": 1,
+                    "d": 258,
+                    "e": 66048,
+                    "properties": {
+                        "mode": "abc",
+                        "hasAux": false
+                    }
+                },
+                {
+                    "opcode": 22,
+                    "name": "LOP_RETURN",
+                    "a": 0,
+                    "b": 1,
+                    "c": 0,
+                    "d": 1,
+                    "e": 256,
+                    "properties": {
+                        "mode": "abc",
+                        "hasAux": false
+                    }
+                }
+            ],
+            "nConstants": 8,
+            "constants": [
+                {
+                    "type": 6,
+                    "value": 0
+                },
+                {
+                    "type": 3,
+                    "value": 1
+                },
+                {
+                    "type": 2,
+                    "value": 3
+                },
+                {
+                    "type": 3,
+                    "value": 2
+                },
+                {
+                    "type": 4,
+                    "value": [
+                        3
+                    ]
+                },
+                {
+                    "type": 3,
+                    "value": 3
+                },
+                {
+                    "type": 3,
+                    "value": 4
+                },
+                {
+                    "type": 3,
+                    "value": 5
+                }
+            ],
+            "nFunctions": 1,
+            "functions": [],
+            "lineDefined": 1,
+            "debugName": 0
+        }
+    ],
+    "version": 5,
+    "typesVersion": 1,
+    "mainFunction": 1
+}
