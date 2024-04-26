@@ -1,6 +1,6 @@
 # Luau Decompiler
 
-Work in progress
+Work in progress, taking PRs.
 
 # Installation
 
