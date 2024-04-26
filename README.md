@@ -23,7 +23,7 @@ npm install
 
 # Usage
 
-Usage: `npm start decompiler.js <input-file> <output-directory>`
+Usage: `npm start <input-file> <output-directory>`
 
 The decompiler will output the decompiled Lua code to the output directory, along with the deserialized code.
 
