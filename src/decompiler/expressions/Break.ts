@@ -1,10 +1,8 @@
-export class Break {
-	source: string = '';
+import { Expression } from './Expression';
 
+export class Break extends Expression {
 	build(tabSize: number) {
-		const tabs = '\t'.repeat(tabSize);
-
-		this.source = tabs;
+		this.buildTabs(tabSize);
 		this.source += 'break';
 
 		return this.source;

@@ -1,7 +1,7 @@
-import ByteReader from '../byteReader';
 import { i8, uint32 } from '../types/bytedata';
-import Constant from './Constant';
 import Instruction from './Instruction';
+import Constant from './Constant';
+import ByteReader from '../byteReader';
 import { ConstantType } from '../enums/constants';
 
 export default class Function {

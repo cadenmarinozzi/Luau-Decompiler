@@ -1,5 +1,5 @@
-import { f32, f64, uint32, i32, i64, i8 } from '../types/bytedata';
 import { Bytecode } from '../types/bytecode';
+import { f32, f64, i32, i8, uint32 } from '../types/bytedata';
 
 class ByteReader {
 	bytecode: Bytecode;

@@ -41,6 +41,22 @@ First, download the Luau source code from the Roblox repository:
 git clone https://https://github.com/luau-lang/luau
 ```
 
+Then build the Luau compiler:
+
+On all platforms:
+
+```bash
+mkdir cmake && cd cmake
+cmake .. -DCMAKE_BUILD_TYPE=RelWithDebInfo
+cmake --build . --target Luau.Repl.CLI --config RelWithDebInfo
+```
+
+On Linux/MacOS:
+
+```bash
+make config=release luau
+```
+
 Then build the generator:
 
 On all platforms:

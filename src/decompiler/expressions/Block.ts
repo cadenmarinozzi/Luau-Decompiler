@@ -1,17 +1,22 @@
-import { IfThen } from '../statements/IfThen';
-import { Statement } from '../statements/Statement';
-import { End } from './End';
+import { Expression, ExpressionInfc } from './Expression';
+import { StatementInfc } from '../statements/Statement';
 import { Return } from './Return';
+import { IfThen } from './IfThen';
+import { End } from './End';
+import { FunctionDefinition } from './FunctionDefinition';
 
-export class Block {
-	source: string = '';
-	statements: Statement[] = [];
+export class Block extends Expression {
+	statements: (StatementInfc | ExpressionInfc)[] = [];
 
 	build(tabSize: number) {
 		for (const [index, statement] of this.statements.entries()) {
 			const statSource = statement.build(tabSize);
 
-			if (statement instanceof Return || statement instanceof IfThen) {
+			if (
+				statement instanceof Return ||
+				statement instanceof IfThen ||
+				statement instanceof FunctionDefinition
+			) {
 				this.source += '\n';
 			}
 

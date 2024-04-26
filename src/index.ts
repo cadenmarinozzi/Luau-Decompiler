@@ -1,6 +1,6 @@
-import deserialize from './deserializer';
 import fs from 'fs';
 import { Bytecode } from './types/bytecode';
+import deserialize from './deserializer';
 import decompile from './decompiler';
 
 const inputFile = process.argv[2];

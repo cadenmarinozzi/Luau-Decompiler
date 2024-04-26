@@ -1,7 +1,7 @@
 import ByteReader from '../byteReader';
 import { i8, uint32 } from '../types/bytedata';
-import Function from './Function';
 import StringTable from './StringTable';
+import Function from './Function';
 
 export default class Program {
 	version: i8 | undefined;
@@ -17,6 +17,11 @@ export default class Program {
 
 	deserialize(reader: ByteReader) {
 		const version = reader.readInt8();
+
+		if (version === 0) {
+			const error = reader.bytecode.slice(reader.position).toString();
+			throw new Error(`Bytecode has error: ${error}`);
+		}
 
 		if (version !== 5) {
 			throw new Error(`Unsupported Lua version: ${version}`);

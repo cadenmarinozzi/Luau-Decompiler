@@ -1,23 +1,21 @@
-export class Assignment {
-	source: string = '';
+import { Expression } from './Expression';
 
+export class Assignment extends Expression {
 	target: string;
 	value: string | undefined;
 
 	constructor(target: string, value: string) {
+		super();
+
 		this.target = target;
 		this.value = value;
 	}
 
 	build(tabSize: number) {
-		const tabs = '\t'.repeat(tabSize);
+		const { target, value } = this;
 
-		this.source = tabs;
-		this.source += 'local ';
-		this.source += this.target;
-		this.source += ' = ';
-
-		this.source += this.value;
+		this.buildTabs(tabSize);
+		this.source += `local ${target} = ${value}`;
 
 		return this.source;
 	}

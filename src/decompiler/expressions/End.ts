@@ -1,10 +1,8 @@
-export class End {
-	source: string = '';
+import { Expression } from './Expression';
 
+export class End extends Expression {
 	build(tabSize: number) {
-		const tabs = '\t'.repeat(tabSize - 1);
-
-		this.source = tabs;
+		this.buildTabs(tabSize - 1);
 		this.source += 'end';
 
 		return {

@@ -1,23 +1,23 @@
-import Function from '../deserializer/Function';
 import Instruction from '../deserializer/Instruction';
 import Program from '../deserializer/Program';
-import { ConstantType } from '../enums/constants';
-import { Opcodes } from '../enums/opcodes';
 import { Assignment } from './expressions/Assignment';
-import { Block } from './expressions/Block';
-import { Break } from './expressions/Break';
-import { Call } from './expressions/Call';
-import { End } from './expressions/End';
+import { Opcodes } from '../enums/opcodes';
 import { FunctionDefinition } from './expressions/FunctionDefinition';
-import { IfThen } from './statements/IfThen';
-import { Add } from './expressions/Inline/Add';
-import { Constant } from './expressions/Inline/Constant';
-import { Eq } from './expressions/Inline/Eq';
-import { Sub } from './expressions/Inline/Sub';
+import { Block } from './expressions/Block';
+import { End } from './expressions/End';
+import { Constant } from './statements/Constant';
 import { Return } from './expressions/Return';
-import { Neq } from './expressions/Inline/Neq';
-import { Le } from './expressions/Inline/Le';
-import { Not } from './expressions/Inline/Not';
+import { Break } from './expressions/Break';
+import { ConstantType } from '../enums/constants';
+import { Sub } from './statements/Sub';
+import { Add } from './statements/Add';
+import { Call } from './expressions/Call';
+import { Neq } from './statements/Neq';
+import { Eq } from './statements/Eq';
+import { Le } from './statements/Le';
+import { Not } from './statements/Not';
+import { IfThen } from './expressions/IfThen';
+import Function from '../deserializer/Function';
 
 function buildBlock(
 	func: Function,
@@ -79,7 +79,7 @@ function buildBlock(
 				funcBlock.statements.push(blo.block);
 				funcBlock.statements.push(new End());
 
-				block.statements.push(funcBlock);
+				// block.statements.push(funcBlock);
 
 				break;
 			}
@@ -317,5 +317,5 @@ export default function decompile(program: Program): string {
 		}
 	}
 
-	return decompiled;
+	return decompiled.trim();
 }

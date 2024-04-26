@@ -1,21 +1,23 @@
-export class Call {
-	source: string = '';
+import { Expression } from './Expression';
+
+export class Call extends Expression {
 	functionName: string = '';
 	args: string[] = [];
 
 	constructor(functionName: string, args: string[]) {
+		super();
+
 		this.functionName = functionName;
 		this.args = args;
 	}
 
 	build(tabSize: number) {
-		const tabs = '\t'.repeat(tabSize);
+		const { args, functionName } = this;
 
-		this.source = tabs;
-		this.source += this.functionName;
-		this.source += '(';
-		this.source += this.args.join(', ');
-		this.source += ')';
+		const argsString = args.join(', ');
+
+		this.buildTabs(tabSize);
+		this.source += `${functionName}(${argsString})`;
 
 		return this.source;
 	}

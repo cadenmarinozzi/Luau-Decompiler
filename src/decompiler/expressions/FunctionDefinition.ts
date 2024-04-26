@@ -1,23 +1,23 @@
-export class FunctionDefinition {
-	source: string = '';
-	target: string = '';
+import { Expression } from './Expression';
 
+export class FunctionDefinition extends Expression {
+	target: string = '';
 	args: string[] = [];
 
 	constructor(target: string, args: string[]) {
+		super();
+
 		this.target = target;
 		this.args = args;
 	}
 
 	build(tabSize: number) {
-		const tabs = '\t'.repeat(tabSize);
+		const { args, target } = this;
 
-		this.source = tabs;
-		this.source += 'function ';
-		this.source += this.target;
-		this.source += '(';
-		this.source += this.args.join(', ');
-		this.source += ')';
+		const argsString = args.join(', ');
+
+		this.buildTabs(tabSize);
+		this.source += `function ${target}(${argsString})`;
 
 		return {
 			source: this.source,

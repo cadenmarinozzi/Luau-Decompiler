@@ -1,17 +1,21 @@
-export class Return {
-	source: string = '';
+import { Expression } from './Expression';
+
+export class Return extends Expression {
 	values: string[] = [];
 
 	constructor(values: string[]) {
+		super();
+
 		this.values = values;
 	}
 
 	build(tabSize: number) {
-		const tabs = '\t'.repeat(tabSize);
+		const { values } = this;
 
-		this.source = tabs;
-		this.source += 'return ';
-		this.source += this.values.join(', ');
+		const valuesString = values.join(', ');
+
+		this.buildTabs(tabSize);
+		this.source += `return ${valuesString}`;
 
 		return this.source;
 	}

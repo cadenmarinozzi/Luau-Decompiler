@@ -1,6 +1,8 @@
-export interface Statement {
-	build(
-		tabSize: number | undefined | null
-	): string | { tabSize: number; source: string };
+export class Statement {
+	source: string = '';
+}
+
+export interface StatementInfc {
 	source: string;
+	build: () => string;
 }
